@@ -1,0 +1,11 @@
+version: '2'
+services:
+    microservicese2e-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/MicroServicesE2E/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=MicroServicesE2E
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
